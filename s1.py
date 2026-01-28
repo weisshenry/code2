@@ -19,27 +19,31 @@ col6=[rowa[5],rowb[5],rowc[5],rowd[5],rowe[5],rowf[5],rowg[5],rowh[5],rowj[5]]
 col7=[rowa[6],rowb[6],rowc[6],rowd[6],rowe[6],rowf[6],rowg[6],rowh[6],rowj[6]]
 col8=[rowa[7],rowb[7],rowc[7],rowd[7],rowe[7],rowf[7],rowg[7],rowh[7],rowj[7]]
 col9=[rowa[8],rowb[8],rowc[8],rowd[8],rowe[8],rowf[8],rowg[8],rowh[8],rowj[8]]
-
 sqx1=[rowa[0],rowa[1],rowa[2],rowb[0],rowb[1],rowb[2],rowc[0],rowc[1],rowc[2]]
 sqx1=[rowa[3],rowa[4],rowa[5],rowb[3],rowb[4],rowb[5],rowc[3],rowc[4],rowc[5]]
 sqx1=[rowa[6],rowa[7],rowa[8],rowb[6],rowb[7],rowb[8],rowc[6],rowc[7],rowc[8]]
-
 sqx4=[rowd[0],rowd[1],rowd[2],rowe[0],rowe[1],rowe[2],rowf[0],rowf[1],rowf[2]]
 sqx5=[rowd[3],rowd[4],rowd[5],rowe[3],rowe[4],rowe[5],rowf[3],rowf[4],rowf[5]]
 sqx6=[rowd[6],rowd[7],rowd[8],rowe[6],rowe[7],rowe[8],rowf[6],rowf[7],rowf[8]]
-
 sqx7=[rowg[0],rowg[1],rowg[2],rowh[0],rowh[1],rowh[2],rowj[0],rowj[1],rowj[2]]
 sqx8=[rowg[3],rowg[4],rowg[5],rowh[3],rowh[4],rowh[5],rowj[3],rowj[4],rowj[5]]
 sqx9=[rowg[6],rowg[7],rowg[8],rowh[6],rowh[7],rowh[8],rowj[6],rowj[7],rowj[8]]
-
 
 if __name__ == "__main__":
    print('   Startx') 
    a = 3.14
    b= a*a
    print('   b %.2f \b' %(b))
+   print('   Stage1: data:  row, col, sqr')
+   print('   Row A:')
    print(rowa)
+   print('   Col 5')
    print(col5)
+   print('   Sqr 1')
    print(sqx1)
+   print('   Sqr 8')
+   print(sqx8)   
+   print9'   Stage2: calc all open numbs')
+   calcopen()
    print('   End') 
    sys.exit()
