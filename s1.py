@@ -34,7 +34,7 @@ sqx9=[rowg[6],rowg[7],rowg[8],rowh[6],rowh[7],rowh[8],rowj[6],rowj[7],rowj[8]]
 
 
 if __name__ == "__main__":
-   print('   Start') 
+   print('   Startx') 
    a = 3.14
    b= a*a
    print('   b %.2f \b' %(b))
