@@ -17,8 +17,10 @@ def loadrows():
    rowj=[0,4,8,0,7,0,0,0,0]
    return rowa,rowb,rowc,rowd,rowe,rowf,rowg,rowh,rowj
    
-#def loadcols(rowa,rowb,rowc,rowd,rowe,rowf,rowg,rowh,rowj):
-def loadcols():
+def loadcols(rowa,rowb,rowc,rowd,rowe,rowf,rowg,rowh,rowj):
+#def loadcols():
+   print('   inside loadcols')
+   pdb.set_trace()
    col1=[rowa[0],rowb[0],rowc[0],rowd[0],rowe[0],rowf[0],rowg[0],rowh[0],rowj[0]]
    col2=[rowa[1],rowb[1],rowc[1],rowd[1],rowe[1],rowf[1],rowg[1],rowh[1],rowj[1]]
    col3=[rowa[2],rowb[2],rowc[2],rowd[2],rowe[2],rowf[2],rowg[2],rowh[2],rowj[2]]
@@ -30,8 +32,8 @@ def loadcols():
    col9=[rowa[8],rowb[8],rowc[8],rowd[8],rowe[8],rowf[8],rowg[8],rowh[8],rowj[8]] 
    return col1,col2,col3,col4,col5,col6,col7,col8,col9
    
-#def loadsqrs(rowa,rowb,rowc,rowd,rowe,rowf,rowg,rowh,rowj): 
-def loadsqrs():
+def loadsqrs(rowa,rowb,rowc,rowd,rowe,rowf,rowg,rowh,rowj): 
+#def loadsqrs():
    sqr1=[rowa[0],rowa[1],rowa[2],rowb[0],rowb[1],rowb[2],rowc[0],rowc[1],rowc[2]]
    sqr2=[rowa[3],rowa[4],rowa[5],rowb[3],rowb[4],rowb[5],rowc[3],rowc[4],rowc[5]]
    sqr3=[rowa[6],rowa[7],rowa[8],rowb[6],rowb[7],rowb[8],rowc[6],rowc[7],rowc[8]]
@@ -43,20 +45,4 @@ def loadsqrs():
    sqr9=[rowg[6],rowg[7],rowg[8],rowh[6],rowh[7],rowh[8],rowj[6],rowj[7],rowj[8]]
    return sqr1,sqr2,sqr3,sqr4,sqr5,sqr6,sqr7,sqr8,sqr9
 
-if __name__ == "__main__":
-   print('   Startx') 
-   rowa,rowb,rowc,rowd,rowe,rowf,rowg,rowh,rowj= loadrows()
-   col1,col2,col3,col4,col5,col6,col7,col8,col9= loadcols()
-   sqr1,sqr2,sqr3,sqr4,sqr5,sqr6,sqr7,sqr8,sqr9= loadsqrs()                    
-   print('   Row A:')
-   print(rowa)
-   print('   Col 5')   
-   print(col5)
-   print('   Sqr 1')
-   print(sqr1)
-   print('   Sqr 8')
-   print(sqr8)   
-   print('   Stage2: calc all open numbs')  
-   
-   print('   End') 
-   sys.exit()
+
