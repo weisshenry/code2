@@ -20,7 +20,7 @@ def loadrows():
 def loadcols(rowa,rowb,rowc,rowd,rowe,rowf,rowg,rowh,rowj):
 #def loadcols():
    print('   inside loadcols')
-   pdb.set_trace()
+   #pdb.set_trace()
    col1=[rowa[0],rowb[0],rowc[0],rowd[0],rowe[0],rowf[0],rowg[0],rowh[0],rowj[0]]
    col2=[rowa[1],rowb[1],rowc[1],rowd[1],rowe[1],rowf[1],rowg[1],rowh[1],rowj[1]]
    col3=[rowa[2],rowb[2],rowc[2],rowd[2],rowe[2],rowf[2],rowg[2],rowh[2],rowj[2]]
