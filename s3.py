@@ -2,10 +2,19 @@ import sys
 import numpy
 import pdb
 import t3
+llst=[1,2,3,4,5,6,7,8,9]
 
-def getopx(opx,rowx,colx,sqrx):
-   lstrow = rowx; lstcol = colx; lstsqr = sqrx
-   opnn=[lstrow,lstcol,lstsqr]
+def getopx(opx,rowx,colx,sqrx):   
+   opnn=llst
+   for item in rowx:
+      if item in opnn:
+         opnn.remove(item)
+   for item in colx:
+      if item in opnn:
+         opnn.remove(item) 
+   for item in sqrx:
+      if item in opnn:
+         opnn.remove(item) 
    return opnn
 
 if __name__ == "__main__":
@@ -26,7 +35,10 @@ if __name__ == "__main__":
    for j in range(cols):
       for i in range(rows):
          opx[j][i]=llst
-   print(opx)
+   #print(opx)
+   print(rowa)
+   print(col1)
+   print(sqr1)
    opnn = getopx(opx,rowa,col1,sqr1)
    print('   open lst')
    print(opnn)
