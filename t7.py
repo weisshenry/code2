@@ -1,7 +1,6 @@
 import sys
 import numpy
 import pdb
-llst=[1,2,3,4,5,6,7,8,9]
 
 def loadrows():
    rowa=[8,0,0,0,0,4,6,3,0]
@@ -48,17 +47,6 @@ def loadsqrs(rowx):
    sqrx=[sqr1,sqr2,sqr3,sqr4,sqr5,sqr6,sqr7,sqr8,sqr9]
    return sqrx
    
-def getopx(opx,rowx,colx,sqrx):   
-   opnn=llst
-   for item in rowx:
-      if item in opnn:
-         opnn.remove(item)
-   for item in colx:
-      if item in opnn:
-         opnn.remove(item) 
-   for item in sqrx:
-      if item in opnn:
-         opnn.remove(item) 
-   return opnn
+
 
 
