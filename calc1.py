@@ -1,6 +1,6 @@
 #calc1   calc of sudoko posSet after read of values
 import sys
-import numpy
+import numpy 
 import pdb
 import aux1 as TX
 

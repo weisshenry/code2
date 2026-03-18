@@ -1,5 +1,5 @@
 # dsp1 display posSet (from grades.txt) Pyside6 grid
-import sys              
+import sys  
 from PySide6.QtWidgets import (QApplication, QWidget, QGridLayout, 
                              QLineEdit, QVBoxLayout, QPushButton, QMessageBox)
 from PySide6.QtCore import Qt

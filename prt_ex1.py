@@ -46,7 +46,7 @@ class PrintFormExample(QMainWindow):
         
         # Get the document content from the QTextEdit widget
         document = self.text_edit.document()
-        pdb.set_trace()
+        # pdb.set_trace()
         # The QTextDocument has a built-in print_ method that can render its content 
         # directly to the QPrinter object
         document.print_(printer)
